@@ -10,6 +10,12 @@ import onion_py.caching
 
 TLDS = ['edu']
 
+def relay_sort_key(relay):
+    hostname = relay.host_name.casefold()
+    split = hostname.split('.')
+    split.reverse()
+    return '.'.join(split)
+
 def analyze_relay(relay):
 
     # Check Hostname TLD
@@ -62,10 +68,10 @@ def list():
 
     # Display Relays
     click.echo("")
-    exit_relays.sort(key=lambda x: x.host_name.casefold())
-    middle_relays.sort(key=lambda x: x.host_name.casefold())
-    guard_relays.sort(key=lambda x: x.host_name.casefold())
-    other_relays.sort(key=lambda x: x.host_name.casefold())
+    exit_relays.sort(key=relay_sort_key)
+    middle_relays.sort(key=relay_sort_key)
+    guard_relays.sort(key=relay_sort_key)
+    other_relays.sort(key=relay_sort_key)
 
     click.echo("Exit Relays: ({:d} found)".format(len(exit_relays)))
     for relay in exit_relays:
