@@ -115,23 +115,31 @@ def list():
     other_relays.sort(key=relay_sort_key)
 
     click.echo("Exit Relays: ({:d} found)".format(len(exit_relays)))
+    vals = []
     for relay in exit_relays:
-        click.echo("{:s}".format(relay.host_name.casefold()))
+        vals.append([relay.host_name.casefold(), relay.nickname, relay.parse_email()])
+    echo_table(vals, headings=['Hostname', 'Nickname', 'Contact'])
     click.echo("")
 
     click.echo("Middle Relays: ({:d} found)".format(len(middle_relays)))
+    vals = []
     for relay in middle_relays:
-        click.echo("{:s}".format(relay.host_name.casefold()))
+        vals.append([relay.host_name.casefold(), relay.nickname, relay.parse_email()])
+    echo_table(vals, headings=['Hostname', 'Nickname', 'Contact'])
     click.echo("")
 
     click.echo("Guard Relays: ({:d} found)".format(len(guard_relays)))
+    vals = []
     for relay in guard_relays:
-        click.echo("{:s}".format(relay.host_name.casefold()))
+        vals.append([relay.host_name.casefold(), relay.nickname, relay.parse_email()])
+    echo_table(vals, headings=['Hostname', 'Nickname', 'Contact'])
     click.echo("")
 
     click.echo("Other Relays: ({:d} found)".format(len(other_relays)))
+    vals = []
     for relay in other_relays:
-        click.echo("{:s}".format(relay.host_name.casefold()))
+        vals.append([relay.host_name.casefold(), relay.nickname, relay.parse_email()])
+    echo_table(vals, headings=['Hostname', 'Nickname', 'Contact'])
     click.echo("")
 
     # Return exit status
