@@ -10,6 +10,47 @@ import onion_py.caching
 
 TLDS = ['edu']
 
+
+def echo_table(values, headings=None):
+
+    # Preprocess
+    values = [[str(c) for c in r] for r in values]
+
+    # Calculate lengths
+    if headings:
+        len_tab = ([headings] + values)
+    else:
+        len_tab = values
+    lengths = []
+    for row in len_tab:
+        for c in range(len(row)):
+            if len(lengths) > c:
+                if len(row[c]) > lengths[c]:
+                    lengths[c] = len(row[c])
+            else:
+                lengths.append(len(row[c]))
+
+    # Print Headings
+    if headings:
+        for c in range(len(lengths)):
+            if c < len(headings):
+                click.echo("{val:^{width}s} | ".format(val=headings[c], width=lengths[c]), nl=False)
+            else:
+                click.echo("{val:^{width}s} | ".format(val="", width=lengths[c]), nl=False)
+        click.echo("")
+        for c in range(len(lengths)):
+            click.echo("{val:{fill}^{width}s} | ".format(val='-', fill='-', width=lengths[c]), nl=False)
+        click.echo("")
+
+    # Print Table
+    for row in values:
+        for c in range(len(lengths)):
+            if c < len(row):
+                click.echo("{val:>{width}s} | ".format(val=row[c], width=lengths[c]), nl=False)
+            else:
+                click.echo("{val:>{width}s} | ".format(val="", width=lengths[c]), nl=False)
+        click.echo("")
+
 def relay_sort_key(relay):
     hostname = relay.host_name.casefold()
     split = hostname.split('.')
