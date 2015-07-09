@@ -67,6 +67,15 @@ def analyze_relay(relay):
         if tld in TLDS:
             return True
 
+def print_relays(relays):
+
+    relays.sort(key=relay_sort_key)
+    vals = []
+    for relay in relays:
+        vals.append([relay.host_name.casefold(), relay.nickname, relay.running, relay.contact])
+    echo_table(vals, headings=['Hostname', 'Nickname', 'Running', 'Contact'])
+
+
 @click.command()
 def list():
     """List University-Affiliated Tor Nodes"""
@@ -109,37 +118,21 @@ def list():
 
     # Display Relays
     click.echo("")
-    exit_relays.sort(key=relay_sort_key)
-    middle_relays.sort(key=relay_sort_key)
-    guard_relays.sort(key=relay_sort_key)
-    other_relays.sort(key=relay_sort_key)
 
     click.echo("Exit Relays: ({:d} found)".format(len(exit_relays)))
-    vals = []
-    for relay in exit_relays:
-        vals.append([relay.host_name.casefold(), relay.nickname, relay.parse_email()])
-    echo_table(vals, headings=['Hostname', 'Nickname', 'Contact'])
+    print_relays(exit_relays)
     click.echo("")
 
     click.echo("Middle Relays: ({:d} found)".format(len(middle_relays)))
-    vals = []
-    for relay in middle_relays:
-        vals.append([relay.host_name.casefold(), relay.nickname, relay.parse_email()])
-    echo_table(vals, headings=['Hostname', 'Nickname', 'Contact'])
+    print_relays(middle_relays)
     click.echo("")
 
     click.echo("Guard Relays: ({:d} found)".format(len(guard_relays)))
-    vals = []
-    for relay in guard_relays:
-        vals.append([relay.host_name.casefold(), relay.nickname, relay.parse_email()])
-    echo_table(vals, headings=['Hostname', 'Nickname', 'Contact'])
+    print_relays(guard_relays)
     click.echo("")
 
     click.echo("Other Relays: ({:d} found)".format(len(other_relays)))
-    vals = []
-    for relay in other_relays:
-        vals.append([relay.host_name.casefold(), relay.nickname, relay.parse_email()])
-    echo_table(vals, headings=['Hostname', 'Nickname', 'Contact'])
+    print_relays(other_relays)
     click.echo("")
 
     # Return exit status
