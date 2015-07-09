@@ -11,7 +11,7 @@ import onion_py.caching
 TLDS = ['edu']
 
 
-def echo_table(values, headings=None):
+def echo_table(values, headings=None, line_limit=None):
 
     # Preprocess
     values = [[str(c) for c in r] for r in values]
@@ -29,6 +29,24 @@ def echo_table(values, headings=None):
                     lengths[c] = len(row[c])
             else:
                 lengths.append(len(row[c]))
+
+    # Set Max Lengths
+    if line_limit:
+        # Calculate Max Lengths
+        while sum(lengths) + (len(lengths) * 3) > line_limit:
+            lengths[lengths.index(max(lengths))] -= 1
+            if max(lengths) <= 4:
+                break
+        # Truncate Headings
+        if headings:
+            for c in range(len(headings)):
+                if len(headings[c]) > lengths[c]:
+                    headings[c] = headings[c][:(lengths[c]-3)] + "..."
+        # Truncate Values
+        for row in values:
+            for c in range(len(row)):
+                if len(row[c]) > lengths[c]:
+                    row[c] = row[c][:(lengths[c]-3)] + "..."
 
     # Print Headings
     if headings:
@@ -73,7 +91,7 @@ def print_relays(relays):
     vals = []
     for relay in relays:
         vals.append([relay.host_name.casefold(), relay.nickname, relay.running, relay.contact])
-    echo_table(vals, headings=['Hostname', 'Nickname', 'Running', 'Contact'])
+    echo_table(vals, headings=['Hostname', 'Nickname', 'Running', 'Contact'], line_limit=160)
 
 
 @click.command()
