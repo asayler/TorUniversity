@@ -90,8 +90,8 @@ def print_relays(relays):
     relays.sort(key=relay_sort_key)
     vals = []
     for relay in relays:
-        vals.append([relay.host_name.casefold(), relay.nickname, relay.running, relay.contact])
-    echo_table(vals, headings=['Hostname', 'Nickname', 'Running', 'Contact'], line_limit=160)
+        vals.append([relay.host_name.casefold(), relay.nickname, relay.running, relay.contact, relay.parse_email()])
+    echo_table(vals, headings=['Hostname', 'Nickname', 'Running', 'Contact', 'Email'], line_limit=160)
 
 
 @click.command()
