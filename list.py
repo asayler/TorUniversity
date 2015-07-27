@@ -70,6 +70,7 @@ def echo_table(values, headings=None, line_limit=None):
         click.echo("")
 
 def relay_sort_key(relay):
+
     hostname = relay.host_name.casefold()
     split = hostname.split('.')
     split.reverse()
@@ -85,13 +86,21 @@ def analyze_relay(relay):
         if tld in TLDS:
             return True
 
+    # Check Email TLD
+    if relay.parse_email():
+        clean_email = relay.parse_email().casefold().strip()
+        split_email = clean_email.split('.')
+        tld = split_email[-1]
+        if tld in TLDS:
+            return True
+
 def print_relays(relays):
 
     relays.sort(key=relay_sort_key)
     vals = []
     for relay in relays:
-        vals.append([relay.host_name.casefold(), relay.nickname, relay.running, relay.contact, relay.parse_email()])
-    echo_table(vals, headings=['Hostname', 'Nickname', 'Running', 'Contact', 'Email'], line_limit=160)
+        vals.append([relay.host_name.casefold(), relay.nickname, relay.running, relay.contact])
+    echo_table(vals, headings=['Hostname', 'Nickname', 'Running', 'Contact'], line_limit=160)
 
 
 @click.command()
