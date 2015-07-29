@@ -1,0 +1,103 @@
+Querying OnionOO for list of relays...
+Analyzing 8119 relays...
+
+Exit Relays: (17 found)
+              Hostname               |      Nickname      | Running |                                       Contact                                        |
+------------------------------------ | ------------------ | ------- | ------------------------------------------------------------------------------------ |
+                       192.99.98.185 |        olympus0000 |    True |                                                           Jon <jsims@pugetsound.edu> |
+                      69.172.229.199 |          Patterson |    True |                        0x75F6C8F9 Alex S Patterson <patterson@SPAMNOTumail.ucsb.edu> |
+                       cs-tor.bu.edu |     BostonUCompSci |    True |                                           Tor Admin <tor -at- cs -dot- bu -dot- edu> |
+              tor-exit.cylab.cmu.edu |         cmutornode |    True |                                               0x6769AA64 Zack Weinberg zackw cmu edu |
+                 tornode.galileo.edu | UniversidadGalileo |    True |                                         System Administrators <sysadmin@galileo.edu> |
+                  t-exit01.merit.edu |              4a701 |    True |                                                                                 None |
+              tor-exit.csail.mit.edu |       csailmitexit |    True |                             0x37C6224D225BCD7D Jon Proulx <jon AT jonproulx dot com> |
+                      onions.mit.edu |             Onions |    True |                         <onions at mit dot edu> - 1QCUtejhQ2jr3oMkKZ8ESQ447kkML6nqmP |
+              tanet-tor-exit.mit.edu |              tanet |    True |                                                        Brian Teague <teague@mit.edu> |
+             tor-exit.eecs.umich.edu |      EecsUmichExit |    True |                                                 Umich Tor <tor-exit-admin@umich.edu> |
+             tor-exit.eecs.umich.edu |     EecsUmichExit2 |    True |                                                 Umich Tor <tor-exit-admin@umich.edu> |
+               tor00.telenet.unc.edu |           ibibUNC0 |    True |                                                           http://answers.ibiblio.org |
+            tor-exit-node.cs.usu.edu |     UtahStateExit0 |    True | jvictors at jessevictors com, PGP 0xC20BEC80, BTC 13QVCGpgR3xtdD4DfRatN2njXx3ymgjZQB |
+            tor-exit-node.cs.usu.edu |     UtahStateExit1 |    True | jvictors at jessevictors com, PGP 0xC20BEC80, BTC 13QVCGpgR3xtdD4DfRatN2njXx3ymgjZQB |
+          tor-exit-node-2.cs.usu.edu |     UtahStateExit2 |    True | jvictors at jessevictors com, PGP 0xC20BEC80, BTC 13QVCGpgR3xtdD4DfRatN2njXx3ymgjZQB |
+          tor-exit-node-2.cs.usu.edu |     UtahStateExit3 |    True | jvictors at jessevictors com, PGP 0xC20BEC80, BTC 13QVCGpgR3xtdD4DfRatN2njXx3ymgjZQB |
+c-50-155-222-171.hsd1.co.comcast.net |            Unnamed |    True |                                    Brandon Kuschel  <kusch023 AT nospam.umn dot edu> |
+
+Middle Relays: (45 found)
+                 Hostname                  |     Nickname      | Running |                                      Contact                                       |
+------------------------------------------ | ----------------- | ------- | ---------------------------------------------------------------------------------- |
+                             128.199.139.0 |         GGdoRelay |    True |                                         Garrett Grimsley <gag8520 AT uncw dot edu> |
+                            209.148.46.129 |        curiosity1 |    True |                                         Tor Admin <tor@security.cs.georgetown.edu> |
+                             67.222.116.25 |             simba |    True |                                                            bonobo@cheshire.dyc.edu |
+                             173.45.228.54 |   carthagecollege |    True |                                                                 larry@carthage.edu |
+ ec2-184-72-106-52.compute-1.amazonaws.com |        duckduckgo |    True |                                               Gabriel Weinberg <yegg@alum.mit.edu> |
+        somerandomrelay.surpluspackets.com |   somerandomrelay |    True |                                         0x8095F57D Reese Moore <ram AT vt dot edu> |
+                   yaor.surpluspackets.com |              yaor |    True |                                         0x8095F57D Reese Moore <ram AT vt dot edu> |
+                  dhcp-172-214.caltech.edu |  alexryantorrelay |    True |                            admin@alexryan.org - 1KPHxjLZXpMwfkc9Wf8Sdo3j5ZN8okRMNh |
+                    copper.club.cc.cmu.edu |           Unnamed |    True |                                                                               None |
+                   dhcp135.cs.columbia.edu |        besixdouze |    True |                                                                               None |
+                 n1-27-134.dhcp.drexel.edu |               T43 |    True |                                                                               None |
+                      planetlab2.cs.du.edu |         tingPLdu2 |    True |                                                                               None |
+                          torg.cns.ksu.edu |     EchoSierraTor |    True |                                                      Ydobon <ydobonTAlhavenTODnet> |
+                     crosswise.ittc.ku.edu |           KUITTC1 |    True |                                                                    lei.yang@ku.edu |
+                            aftbit.mit.edu |            aftbit |    True | 0xE620C8A74BAF5D09 Eric Swanson <eswanson@alloscomp.com> - 1J3UpztNsgHpuTGoiS7G... |
+                         bomboloni.mit.edu |              hwds |    True |                                                    NF  <nicola AT example dot com> |
+                       moria.csail.mit.edu |            moria1 |    True |                                                        1024D/28988BF5 arma mit edu |
+                       xvm-five-37.mit.edu |           VERITAS |    True |               0xA711D81A m_price-at-mit-dot-edu 1M6X76QfUjypzRG7zuQi54Csrv8DSfQUfJ |
+                   li3n45-38.mtholyoke.edu | omfglolwtfbbq1337 |    True |                                                                               None |
+                  planetlabone.ccs.neu.edu |      tingPLneuEDU |    True |                                                                               None |
+                  lagrange.math.purdue.edu |        NewCourier |    True |                                                                               None |
+                   epitaphtwo.stanford.edu |        epitaphtwo |    True |                            0x9C8A93F5 Daniel William Hogan <danhogan@stanford.edu> |
+                    cast-tor.cast.uark.edu |           casttor |    True |                                                   lcolvin at cast dot uark dot edu |
+                  siouxsie.metalab.unc.edu |          ibibUNC2 |    True |                                                                answers.ibiblio.org |
+                         ozone.uoregon.edu |             ozone |    True |                      0x45611A51 Jonathan Perry-Houts <jperryh2 AT uoregon DOT edu> |
+                       aguila2.lsi.upc.edu |           Unnamed |    True |                                                            plab-experiments@gmx.de |
+                       tor-node.cs.usu.edu |        UtahState2 |    True | jvictors at jessevictors com, PGP 0xC20BEC80, BTC 1M6tuPXNmhbgSfaJqnxBUAf5tKi4T... |
+                       tor-node.cs.usu.edu |        UtahState3 |    True | jvictors at jessevictors com, PGP 0xC20BEC80, BTC 1M6tuPXNmhbgSfaJqnxBUAf5tKi4T... |
+                      tor-relay.cs.usu.edu |        UtahState1 |    True | jvictors at jessevictors com, PGP 0xC20BEC80, BTC 1M6tuPXNmhbgSfaJqnxBUAf5tKi4T... |
+                      tor-relay.cs.usu.edu |        UtahState0 |    True | jvictors at jessevictors com, PGP 0xC20BEC80, BTC 1M6tuPXNmhbgSfaJqnxBUAf5tKi4T... |
+                          tor.coe.utah.edu |         UnivUtah0 |    True |                          https://pgp.mit.edu/pks/lookup?search=0x4F4ED372&op=index |
+                          tor.coe.utah.edu |         UnivUtah1 |    True |                          https://pgp.mit.edu/pks/lookup?search=0x4F4ED372&op=index |
+                  chromium.cs.virginia.edu |          invanity |    True |                                                              invanity@virginia.edu |
+                      nc6527d0a.cns.vt.edu |             hokie |    True |                       caa24893@vt.edu - donate: 1EsWFmyhx2EyHA2zqps1YFpzmeoUD8esVN |
+                     h80ad374e.dhcp.vt.edu |            vtcsec |    True |                                        0x64498CFA Matt Hazinski <tor@hazinski.net> |
+                     h80ad37c0.dhcp.vt.edu |           vtcsec2 |    True |                                        0x64498CFA Matt Hazinski <tor@hazinski.net> |
+           tor-exit-node.cs.washington.edu |    UWashingtonCSE |    True |                               University of Washington (tor-ops@cs.washington.edu) |
+                  intended.cs.wesleyan.edu |          WesCSTor |    True |                                        WesCSTor Operator <ndanner AT wesleyan edu> |
+                       caslab.eng.yale.edu |            caslab |    True |                                                                               None |
+        c-50-168-68-53.hsd1.ca.comcast.net |          iNfinity |    True |                                  Ben Keller <firstinitial lastname AT hmc dot edu> |
+      c-69-138-247-193.hsd1.md.comcast.net |           Unnamed |    True |                             0x414A64A2 Aaron M. Ucko <amu at alum dot mit dot edu> |
+      c-50-137-138-100.hsd1.or.comcast.net |   jdearaspberrypi |    True |                                       dearingj at lifetime dot oregonstate dot edu |
+        c-71-199-63-98.hsd1.ut.comcast.net |  haltAndCatchFire |    True |                                       <williamhowelliii AT mail dot weber dot edu> |
+                ns507083.ip-198-245-60.net |    knowledgecomes |    True |                                     Tennyson Holloway < thollowa at ucsd dot edu > |
+pool-71-127-36-192.washdc.fios.verizon.net |             jubei |    True |                                                         TOR Admin <kensama@vt.edu> |
+
+Guard Relays: (16 found)
+             Hostname              |     Nickname     | Running |                                       Contact                                        |
+---------------------------------- | ---------------- | ------- | ------------------------------------------------------------------------------------ |
+                    209.148.46.129 |       curiosity1 |    True |                                           Tor Admin <tor@security.cs.georgetown.edu> |
+somerandomrelay.surpluspackets.com |  somerandomrelay |    True |                                           0x8095F57D Reese Moore <ram AT vt dot edu> |
+          dhcp-172-214.caltech.edu | alexryantorrelay |    True |                              admin@alexryan.org - 1KPHxjLZXpMwfkc9Wf8Sdo3j5ZN8okRMNh |
+         n1-27-134.dhcp.drexel.edu |              T43 |    True |                                                                                 None |
+                 bomboloni.mit.edu |             hwds |    True |                                                      NF  <nicola AT example dot com> |
+               xvm-five-37.mit.edu |          VERITAS |    True |                 0xA711D81A m_price-at-mit-dot-edu 1M6X76QfUjypzRG7zuQi54Csrv8DSfQUfJ |
+           epitaphtwo.stanford.edu |       epitaphtwo |    True |                              0x9C8A93F5 Daniel William Hogan <danhogan@stanford.edu> |
+          siouxsie.metalab.unc.edu |         ibibUNC2 |    True |                                                                  answers.ibiblio.org |
+               tor-node.cs.usu.edu |       UtahState2 |    True | jvictors at jessevictors com, PGP 0xC20BEC80, BTC 1M6tuPXNmhbgSfaJqnxBUAf5tKi4TVhup8 |
+               tor-node.cs.usu.edu |       UtahState3 |    True | jvictors at jessevictors com, PGP 0xC20BEC80, BTC 1M6tuPXNmhbgSfaJqnxBUAf5tKi4TVhup8 |
+              tor-relay.cs.usu.edu |       UtahState0 |    True | jvictors at jessevictors com, PGP 0xC20BEC80, BTC 1M6tuPXNmhbgSfaJqnxBUAf5tKi4TVhup8 |
+                  tor.coe.utah.edu |        UnivUtah0 |    True |                            https://pgp.mit.edu/pks/lookup?search=0x4F4ED372&op=index |
+             h80ad374e.dhcp.vt.edu |           vtcsec |    True |                                          0x64498CFA Matt Hazinski <tor@hazinski.net> |
+             h80ad37c0.dhcp.vt.edu |          vtcsec2 |    True |                                          0x64498CFA Matt Hazinski <tor@hazinski.net> |
+   tor-exit-node.cs.washington.edu |   UWashingtonCSE |    True |                                 University of Washington (tor-ops@cs.washington.edu) |
+        ns507083.ip-198-245-60.net |   knowledgecomes |    True |                                       Tennyson Holloway < thollowa at ucsd dot edu > |
+
+Other Relays: (7 found)
+            Hostname             |     Nickname     | Running |                     Contact                      |
+-------------------------------- | ---------------- | ------- | ------------------------------------------------ |
+                 136.168.201.153 |          serpent |   False |               Steve Garcia <steve@cs.csubak.edu> |
+ cpe-66-56-207-102.ec.res.rr.com |   AyyLmaoGGrelay |   False |       Garrett Grimsley <gag8520 AT uncw dot edu> |
+ saylor-02.feldberg.brandeis.edu | rocketNumberNine |   False |                                       0xAFC1CE7B |
+             d23-105.uoregon.edu |          Unnamed |   False |                                             None |
+a01165910-raspi.bluezone.usu.edu |  myRaspiTorRelay |   False |                                             None |
+       tor-relay00.ailab.wsu.edu |      UFPOatWSU00 |   False |                                             None |
+138.92-221-201.customer.lyse.net |     tormosludino |   False | PGP key 0x4DAEDA9167C747E5 (find at pgp.mit.edu) |
