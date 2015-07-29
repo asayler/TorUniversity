@@ -7,6 +7,8 @@ import click
 import onion_py.manager
 import onion_py.caching
 
+#API_HOST = 'https://onionoo.torproject.org/'
+API_HOST = 'https://onionoo.thecthulhu.com/'
 
 TLDS = ['edu']
 
@@ -109,7 +111,7 @@ def list():
 
     # Setup OnionOO Module
     cache = onion_py.caching.OnionSimpleCache()
-    manager = onion_py.manager.Manager(cache)
+    manager = onion_py.manager.Manager(cache=cache, onionoo_host=API_HOST)
 
     # Query OnionOO
     click.echo("Querying OnionOO for list of relays...")
