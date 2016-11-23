@@ -1,0 +1,73 @@
+Querying OnionOO for list of relays...
+Analyzing 8365 relays...
+
+Exit Relays: (9 found)
+              Hostname               |    Nickname    | Running |                         Contact                          | 
+------------------------------------ | -------------- | ------- | -------------------------------------------------------- | 
+                     128.153.145.125 |    COSItorexit |    True |                                   tor-admin@clarkson.edu | 
+                       cs-tor.bu.edu | BostonUCompSci |    True |               Tor Admin <tor -at- cs -dot- bu -dot- edu> | 
+              tor-exit.cylab.cmu.edu |     cmutornode |    True |          Zack Weinberg https://www.owlfolio.org/contact/ | 
+              tor-exit.csail.mit.edu |   csailmitexit |    True | 0x37C6224D225BCD7D Jon Proulx <jon AT jonproulx dot com> | 
+                  uncle-enzo.mit.edu |      UncleEnzo |    True |      0xBC71BC44 Duncan Townsend <duncant AT mit DOT edu> | 
+             tor-exit.eecs.umich.edu |  EecsUmichExit |    True |                     Umich Tor <tor-exit-admin@umich.edu> | 
+             tor-exit.eecs.umich.edu | EecsUmichExit2 |    True |                     Umich Tor <tor-exit-admin@umich.edu> | 
+               tor00.telenet.unc.edu |       ibibUNC0 |    True |                               http://answers.ibiblio.org | 
+ip-97-74-237-196.ip.secureserver.net |       Minotaur |    True |         Brandon Kuschel <kusch023 AT NOSPAM umn dot edu> | 
+
+Middle Relays: (30 found)
+                 Hostname                   |      Nickname      | Running |                                     Contact                                      | 
+------------------------------------------- | ------------------ | ------- | -------------------------------------------------------------------------------- | 
+                            136.168.201.153 |            serpent |    True |                                               Steve Garcia <steve@cs.csubak.edu> | 
+                              128.114.97.26 |         fickleberg |    True |             University of California at Santa Cruz Abuse <abuse AT ucsc dot edu> | 
+                    yaor.surpluspackets.com |               yaor |    True |                                       0x8095F57D Reese Moore <ram AT vt dot edu> | 
+                        number6.bowdoin.edu |              frank |    True |                                                                             None | 
+                   dhcp-172-214.caltech.edu |   alexryantorrelay |    True |                          admin@alexryan.org - 1KPHxjLZXpMwfkc9Wf8Sdo3j5ZN8okRMNh | 
+                          hugo.carthage.edu |    carthagecollege |    True |                                                               larry@carthage.edu | 
+                       torr.iorc.depaul.edu |             dpujtk |    True |                                    1024D/C85CCA46 John Kristoff <jtk@depaul.edu> | 
+                           berrycup.mit.edu |           berrycup |    True |                             0xFFFFFFFF Random Person <nobody AT example dot com> | 
+                          berrycup2.mit.edu |          berrycup2 |    True |                                        Random Person <nobody AT example dot com> | 
+                          berrycup3.mit.edu |          berrycup3 |    True |                                        Random Person <nobody AT example dot com> | 
+                          bomboloni.mit.edu |               hwds |    True |                                                   hwds <hwds AT example dot com> | 
+                        moria.csail.mit.edu |             moria1 |    True |                                                      1024D/28988BF5 arma mit edu | 
+         52-178-233.openstack.csail.mit.edu |     csailmitnoexit |    True | Jon Proulx <jon AT csail dot mit dot edu> GPG Key ID 0x37C6224D225BCD7D Finge... | 
+                           firewarp.mit.edu |        LunarPulsar |    True |               0x4E82CABD nchinda2@gmail.com - 1Agep4xQJFZXuYcYafa5otsmD2oHwPc5GX | 
+                               meat.mit.edu |     MeatIsMeat1997 |    True |                                                                             null | 
+                       raspberrytea.mit.edu |               rtea |    True |                             0xFFFFFFFF Random Person <nobody AT example dot com> | 
+                        xvm-five-37.mit.edu |            VERITAS |    True |             0xA711D81A m_price-at-mit-dot-edu 1M6X76QfUjypzRG7zuQi54Csrv8DSfQUfJ | 
+                           arg2.ccs.neu.edu |                arg |    True |                                                              privacy@ccs.neu.edu | 
+                           arg3.ccs.neu.edu |                arg |    True |                                                              privacy@ccs.neu.edu | 
+      dynamic-oit-testnet-f-1.princeton.edu | ididnteditheconfig |    True |                                                                             None | 
+                    everfailed.stanford.edu |         everfailed |    True |                          0x9C8A93F5 Daniel William Hogan <danhogan@stanford.edu> | 
+                     planetlab2.cs.ucla.edu |           gtzation |    True |                                                                 569825450@qq.com | 
+                     hammadirl.cs.uiowa.edu |               torW |    True |                                                                             None | 
+                     hammadirl.cs.uiowa.edu |               torZ |    True |                                                                             None | 
+            tor-exit-node.cs.washington.edu |     UWashingtonCSE |    True |                             University of Washington (tor-ops@cs.washington.edu) | 
+50-250-14-93-static.hfc.comcastbusiness.net |           scylding |    True |                                                Grant Gould <ggould@alum.mit.edu> | 
+       ip-97-74-237-196.ip.secureserver.net |          Minotaur1 |    True |                                 Brandon Kuschel <kusch023 AT NOSPAM umn dot edu> | 
+  pool-108-51-89-73.washdc.fios.verizon.net |              jubei |    True |                                           0xDE54A0BA TOR Admin <jandrese@vt.edu> | 
+  pool-173-73-72-39.washdc.fios.verizon.net |            Unnamed |    True |                           0x414A64A2 Aaron M. Ucko <amu at alum dot mit dot edu> | 
+         v22015051629825380.yourvserver.net |         mrdrogdrog |    True |                           0x59433CBC Tilman Vatteroth <tilman.vatteroth@udo.edu> | 
+
+Guard Relays: (8 found)
+             Hostname              |    Nickname    | Running |                                            Contact                                            | 
+---------------------------------- | -------------- | ------- | --------------------------------------------------------------------------------------------- | 
+52-178-233.openstack.csail.mit.edu | csailmitnoexit |    True | Jon Proulx <jon AT csail dot mit dot edu> GPG Key ID 0x37C6224D225BCD7D Finger Print: 4829... | 
+                  firewarp.mit.edu |    LunarPulsar |    True |                            0x4E82CABD nchinda2@gmail.com - 1Agep4xQJFZXuYcYafa5otsmD2oHwPc5GX | 
+                      meat.mit.edu | MeatIsMeat1997 |    True |                                                                                          null | 
+               xvm-five-37.mit.edu |        VERITAS |    True |                          0xA711D81A m_price-at-mit-dot-edu 1M6X76QfUjypzRG7zuQi54Csrv8DSfQUfJ | 
+           everfailed.stanford.edu |     everfailed |    True |                                       0x9C8A93F5 Daniel William Hogan <danhogan@stanford.edu> | 
+            hammadirl.cs.uiowa.edu |           torW |    True |                                                                                          None | 
+            hammadirl.cs.uiowa.edu |           torZ |    True |                                                                                          None | 
+   tor-exit-node.cs.washington.edu | UWashingtonCSE |    True |                                          University of Washington (tor-ops@cs.washington.edu) | 
+
+Other Relays: (7 found)
+               Hostname                |    Nickname     | Running |                                  Contact                                   | 
+-------------------------------------- | --------------- | ------- | -------------------------------------------------------------------------- | 
+         dhcp-18-111-51-78.dyn.mit.edu |      OrbotRelay |   False |                                                                       None | 
+     eng-sat417-01.engineering.nyu.edu | totallynotsquid |   False |                                 Kevin <kevin dot gallagher at nyu dot edu> | 
+  client-104-39-4-170.mobility.psu.edu |      OrbotRelay |   False |                                                                       None | 
+          dyn-131-212-208-90.d.umn.edu |      OrbotRelay |   False |                                                                       None | 
+          tor-exit-node.seas.upenn.edu |    UnivOfPAExit |   False | Univ of PA Tor Exit <tor-exit (at) lists (dot) seas (dot) upenn (dot) edu> | 
+d-173-250-149-123.dhcp4.washington.edu |      OrbotRelay |   False |                                                                       None | 
+ d-173-250-152-62.dhcp4.washington.edu |      OrbotRelay |   False |                                                                       None | 
+
